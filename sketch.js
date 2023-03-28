@@ -58,7 +58,6 @@ function draw() {
   colisaoMinhaRaqueteBiblioteca (xOponente, yOponente);
   incluiPlacar();
   marcaPonto();
-  bolinhaNaoFicaPresa();
   
 }
 
@@ -81,12 +80,6 @@ function verificaColisaoBorda() {
   
   if (yBolinha + raio > height || yBolinha - raio < 0)
     velocidadeYBolinha *= -1;
-}
-
-function bolinhaNaoFicaPresa(){
-    if (xBolinha - raio < 0){
-    xBolinha = 23
-    }
 }
 
 // Função da minha Raquete
